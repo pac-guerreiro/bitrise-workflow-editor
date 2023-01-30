@@ -59,7 +59,7 @@ header.menu {
 
 			svg {
 				@include size(24px);
-				fill: $def-grey;
+				fill: $def-white;
 			}
 
 			@mixin icon_styling($icon_class) {
@@ -117,7 +117,7 @@ header.menu {
 			max-width: 100%;
 			font-size: 18px;
 			font-weight: 300;
-			color: $def-grape;
+			color: $def-white;
 
 			.level {
 				@include flex-shrink(0);
@@ -166,7 +166,7 @@ header.menu {
 
 				svg {
 					@include size(18px, 22px);
-					fill: $def-grey;
+					fill: $def-white;
 				}
 			}
 
@@ -175,7 +175,7 @@ header.menu {
 
 				svg {
 					@include size(18px, 21px);
-					fill: $def-grey;
+					fill: $def-white;
 				}
 			}
 		}
@@ -198,16 +198,13 @@ header.menu {
 					content: "";
 					@include position(absolute, 100%, 0);
 					@include size(100%);
-					border-top: $border_width solid $def-violet_blue;
-					@include border-top-radius($border_width);
-					background-color: white;
 				}
 
 				position: relative;
 				@include display-flex;
 				@include justify-content(center);
 				@include align-items(center);
-				padding: $menubutton_verticalpadding 26px;
+				padding: $menubutton_verticalpadding 16px;
 				text-align: center;
 				font-size: 16px;
 				font-weight: 400;
@@ -240,9 +237,12 @@ header.menu {
 
 			button.tab:hover:not(.current),
 			button.tab:focus:not(.current) {
-				$color: $def-violet_blue;
+				$color: white;
 
 				color: $color;
+				background-color: $def-royal-purple;
+				border-top-left-radius: 6px;
+    			border-top-right-radius: 6px;
 
 				span.icon svg {
 					fill: $color;
@@ -260,9 +260,13 @@ header.menu {
 			}
 
 			button.tab.current {
-				$color: $def-violet_blue;
+				$color: $def-ksu-purple;
 
 				color: $color;
+				background-color: $def-white;
+    			border-top-left-radius: 6px;
+    			border-top-right-radius: 6px;
+				cursor: default;
 
 				&:before {
 					top: 0;
@@ -479,14 +483,14 @@ header.menu {
 
 header.sticky header.menu {
 	padding-top: 10px;
-	background-color: $def-ultralightgrey;
+	background-color: $def-ksu-purple;
 }
 
 .main-content {
 	@include flex-grow(1);
 	@include display-flex;
 	@include flex-direction(column);
-	background-color: $def-ultralightgrey;
+	background-color: $def-ksu-purple;
 
 	article.menu-content {
 		@include flex-grow(1);
