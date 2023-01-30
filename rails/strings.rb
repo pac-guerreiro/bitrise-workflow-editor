@@ -25,7 +25,7 @@ def strings
                     workflows: "Workflows",
                     code_signing: "Code Signing & Files",
                     secrets: "Secrets",
-                    env_vars: "Env Vars",
+                    env_vars: "Environment Variables",
                     triggers: "Triggers",
                     stack: "Stack",
                     stacks_and_machines: "Stacks & Machines",
